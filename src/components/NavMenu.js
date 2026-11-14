@@ -6,8 +6,8 @@ function NavMenu()
         <nav>
             <ul>
                 <li>    <NavLink to="/">          Home        </NavLink></li>
-                <li>    <NavLink to="/about">     About       </NavLink></li>
-                <li>    <NavLink to="/articles">  Articles    </NavLink></li>
+                <li>    <NavLink to="/About">     About       </NavLink></li>
+                <li>    <NavLink to="/Articles">  Articles    </NavLink></li>
             </ul>
             </nav>
             <Outlet/>

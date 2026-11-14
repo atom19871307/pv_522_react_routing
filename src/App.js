@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import NavMenu from './components/NavMenu';
 import Home from './components/Home';
 import About from './components/About';
+import Article from './components/Article';
 import Articles from './components/Articles';
-import {  Route, Routes, NavLink } from 'react-router-dom';
-import NavMenu from './components/NavMenu';
+import { Route, Routes, NavLink } from 'react-router-dom';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                   <Route index                  element={<Home />}      />
                   <Route path="/about"          element={<About />}     />
                   <Route path="/articles"       element={<Articles />}  />
+                  <Route path="/articles/:id"   element={<Article />}   />
               </Route>
           </Routes>
 
