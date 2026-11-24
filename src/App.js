@@ -1,34 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import NavMenu from './components/NavMenu';
-import Home from './components/Home';
-import About from './components/About';
-import Article from './components/Article';
-import Articles from './components/Articles';
-import { Route, Routes, NavLink } from 'react-router-dom';
 
-function App() {
-  return (
-      <div className="App">
-          <Header />
-          {/*<NavMenu />*/}
-          {/*<Routes>*/}
-          {/*    <Route path="/"           element={<Home />}      />*/}
-          {/*    <Route path="/about"      element={<About />}     />*/}
-          {/*    <Route path="/articles"   element={<Articles />}  />*/}
-          {/*</Routes>*/}
+import Header from './layout/Header.js';
+import Main from './layout/Main.js';
+import Footer from './layout/Footer.js';
 
-          <Routes>
-              <Route path="/" element={<NavMenu />} >
-                  <Route index                  element={<Home />}      />
-                  <Route path="/about"          element={<About />}     />
-                  <Route path="/articles"       element={<Articles />}  />
-                  <Route path="/articles/:id"   element={<Article />}   />
-              </Route>
-          </Routes>
-
-    </div>
-  );
+function App()
+{
+	return (
+		<div className="App">
+			<Header />
+			<Main />
+			<Footer />
+		</div>
+	);
 }
+
 export default App;
